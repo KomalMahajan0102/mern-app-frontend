@@ -1,0 +1,51 @@
+li{
+    list-style: none;
+}
+.navbar{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;  
+    height: 10vh;
+    align-items: center;
+    color: #646cff;
+  
+    /* background-color: aquamarine; */
+    
+    
+
+}
+.logo-brand{
+    font-size: 25px;
+}
+.active{
+    color: #646cff;
+    
+}
+
+ul{
+    display: flex;
+    gap:1.9rem;
+    
+}
+a:Link{
+    text-decoration: none !important;
+    position: relative;
+    color: #646cff !important;
+}
+a:Link::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #646cff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    opacity: 0;
+    transition: all 0.2s;
+
+}
+a:hover::after{
+    opacity: 1;
+    
+}
+
